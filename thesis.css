@@ -1,0 +1,81 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(67, 62, 63, 1);
+}
+#canvas-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#monster-button-bar {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+#monster-button-bar button {
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+header { 
+  background: url('Upper-Molar.svg') repeat-x, rgba(222, 116, 100, 0.3); background-size: 10rem; 
+  background-position: bottom; 
+  position: relative; 
+  padding: 1rem 0; 
+  height: 8%; 
+  text-align: center; 
+  z-index: 9; 
+}
+footer {
+  background: url('Lower-Molar.svg') repeat-x, rgba(222, 116, 100, 0.3);
+  background-size: 10rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 8%;
+  padding: 1rem 0;
+  text-align: center;
+  z-index: 5;
+}
+h1 {
+  display: inline;
+  color: #F6AE2D;
+  font-size: 10em;
+  z-index: 2;
+  font-family: 'TheNightWatch';
+  src: url('TheNightWatch.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  background-color: rgba(252, 239, 240, 0.9);
+}
+button {
+  background-color: rgba(214, 73, 51, 1);
+  color: white;
+  border: none;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-family: 'OrticaAngular-Bold';
+}
+button:hover {
+  background-color: rgba(195, 54, 40, 1);
+}
+@font-face {
+  font-family: 'OrticaAngular-Bold';
+  src: url('OrticaAngular-Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'TheNightWatch';
+  src: url('TheNightWatch.ttf') format('truetype');
+}
